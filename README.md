@@ -1,11 +1,11 @@
 <!-- GFM-TOC -->
 * [MovieRecommendation](#movieRecommendation)
-    * [Introduction](##introduction)
-    * [PartI](##partI)
-    * [PartII](##partII)
-    * [PartIII](##partIII)    
-    * [Conclusion](##conclusion)  
-    * [References](##references)  
+    * [Introduction](#introduction)
+    * [PartI](#partI)
+    * [PartII](#partII)
+    * [PartIII](#partIII)    
+    * [Conclusion](#conclusion)  
+    * [References](#references)  
     
 # MovieRecommendation
 ## Introduction
