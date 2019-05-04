@@ -4,7 +4,8 @@
     * [PartI](##PartI)
     * [PartII](##PartII)
     * [PartIII](##PartIII)    
-    
+    * [Conclusion](##Conclusion)  
+    * [References](##References)  
     
 # MovieRecommendation
 ## Introduction
@@ -25,3 +26,22 @@
   * According to the similarity of matrix, we can generate the final recommendation lists
 ## PartIII
 ### Tensorflow Movie Recommendation
+#### Network
+![picture](images/network.jpeg)
+#### Text Convolutional Network
+The first layer of the network is the word embedding layer, an embedding matrix consisting of the embedded vectors of each word. The next layer uses a number of different size (window size) convolution kernels to convolve on the embedded matrix. The window size refers to each convolution covering several words. This is not the same as convolving the image. The convolution of the image is usually 2x2, 3x3, 5x5, and the text convolution is to cover the embedded vector of the entire word, so the size is (number of words, vector dimension). For example, slide 3, 4 or 5 words at a time. The third layer network is max pooling to get a long vector, and finally use dropout for regularization, and finally get the characteristics of the movie Title.
+## Conclusion
+### Difference between part1 and part2
+**Collaborative Filtering using data of multiple users, Convolutional Network only use the user's own data**
+## References
+### Dataset
+* [MovieLens](https://grouplens.org/datasets/movielens/)
+### Other
+* [Various Implementations of Collaborative Filtering](https://towardsdatascience.com/various-implementations-of-collaborative-filtering-100385c6dfe0)
+* [Tensorflow Training](http://wiki.jikexueyuan.com/project/tensorflow-zh/tutorials/mnist_tf.html)
+* [Tensorflow Offical](https://www.tensorflow.org/guide/low_level_intro)
+* [Convolutional Neural Networks](https://medium.com/machine-learning-world/convolutional-neural-networks-for-all-part-ii-b4cb41d424fd)
+* [Movie Recommendation](https://github.com/topics/movie-recommendation)
+* [Deep Learning for Recommendations](https://blog.csdn.net/jackmcgradylee/article/details/79129105)
+* [Machine Learning for Recommender systems](https://medium.com/recombee-blog/machine-learning-for-recommender-systems-part-1-algorithms-evaluation-and-cold-start-6f696683d0ed)
+* [Recommender Systems](http://www.ritchieng.com/machine-learning-recommender-systems/)
